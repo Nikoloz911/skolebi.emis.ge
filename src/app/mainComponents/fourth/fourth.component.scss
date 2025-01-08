@@ -1,0 +1,82 @@
+.main-side{
+    width: 100%;
+    height: 380px;
+    .main-title{
+        margin-left: 100px;
+    color: rgb(0, 145, 255);
+    font-weight: 900;
+    margin-top: 40px;
+    }
+    .icon-and-title-container{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-left: 100px;
+        .main-first-card-cube{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 221, 0);
+            width: 60px;
+            height: 60px;
+            border: solid 1px rgb(255, 221, 0);
+            border-radius: 50px;
+            transition: 500ms;
+            &:hover{
+                background-color: #00d5ff;
+                border: solid 1px #00d5ff;
+            }
+            .main-first-card-icon{
+                color: #fff;
+                font-size: 25px;
+            }
+          }
+          .main-icon-title{
+            font-size: 30px;
+          }
+    }
+   .description-title{
+    margin-left: 100px;
+    font-weight: 900;
+   }
+   .description{
+    width: 1500px;
+    margin-left: 100px;
+    font-size: 15px;
+    color: #616161;
+   }
+   .title{
+    margin-left: 100px;
+    font-weight: 800;
+    margin-top: 30px;
+   }
+   .bmulebi-container{
+    background-color: rgb(182, 205, 255);
+    margin-left: 100px;
+    width: 140px;
+    height: 40px;
+    border-radius: solid 1px blue;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .cube{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        border-radius: 50px;
+        border: solid 1px blue;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        .cube-title{
+            font-size: 9px;
+            font-weight: 800;
+        }
+    }
+    .link{
+        color: blue;
+    }
+   }
+}

@@ -1,0 +1,191 @@
+<app-mini-nav-bar></app-mini-nav-bar>
+<div class="schools-details-container" *ngIf="chool">
+    <div class="result-container-left-side">
+        <div class="result-image-container">
+          <img class="result-image" [src]="chool.imageURL" alt="{{ chool.name }} IMAGE">
+        </div>
+      </div>
+      <div class="result-container-right-side">
+        <div class="result-eddress-social-container">
+          <div class="result-eddress-container">
+            <div class="result-region-container">
+              <div class="result-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <p class="result-region">{{ chool.regionName }},</p>
+              <p class="result-destrict-name">
+                {{ chool.districtName }}
+              </p>
+            </div>
+            <p class="result-address">{{ chool.address }}</p>
+          </div>
+          <a href="{{chool.socialNetwork}}">
+          <div class="result-social-container">
+          <div class="result-social-container-icon"><i class="bi bi-facebook"></i></div> 
+          </div>
+        </a>
+        </div>
+      
+
+        <h3 class="result-title">{{ chool.name }}</h3>
+        <div class="small-description-container">
+          <div class="blue-container">
+            <div class="blue-container-left-side">
+              <div class="blue-container-icon-cube">
+                <div class="blue-container-icon">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="blue-container-rigth-side">
+              <p class="direqtori">დირექტორი</p>
+              <p class="principal">{{ chool.principal }}</p>
+            </div>
+          </div>
+          <div class="green-container">
+            <div class="green-container-left-side">
+              <div class="blue-container-icon-cube">
+                <div class="green-container-icon">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="green-container-rigth-side">
+              <!-- არ ისტილება ჯერ ჯერობით -->
+              <p class="status01">საგანმანათლებლო სტატუსი</p>
+              <p class="education-status01">
+                {{ chool.educationStatus }}
+              </p>
+              <!-- არ ისტილება ჯერ ჯერობით -->
+            </div>
+          </div>
+        </div>
+
+        <div class="result-main-container">
+          <div class="result-first-container">
+            <div class="result-first-container-first-side">
+              <div class="result-first-container-first-side-left-side">
+                <div class="result-first-container-first-side-left-side-cube">
+                  <div
+                    class="result-first-container-first-side-left-side-cube-icon"
+                  >
+                    <i class="bi bi-buildings-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="result-first-container-first-side-right-side">
+                <p class="skolis-tipi">სკოლის ტიპი</p>
+                <p class="school-type">{{ chool.schoolType }}</p>
+              </div>
+            </div>
+            <div class="result-first-container-second-side">
+              <div class="result-first-container-first-side-left-side">
+                <div class="result-first-container-first-side-left-side-cube">
+                  <div
+                    class="result-first-container-first-side-left-side-cube-icon"
+                  >
+                    <i class="bi bi-houses-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="result-first-container-first-side-right-side">
+                <p class="skolis-tipi">შენობების რაოდენობა</p>
+                <p class="school-type">{{ chool.buildingCount }}</p>
+              </div>
+            </div>
+            <div class="result-first-container-third-side">
+              <div class="result-first-container-first-side-left-side">
+                <div class="result-first-container-first-side-left-side-cube">
+                  <div
+                    class="result-first-container-first-side-left-side-cube-icon"
+                  >
+                    <i class="bi bi-telephone-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="result-first-container-first-side-right-side">
+                <p class="skolis-tipi">ტელეფონის ნომერი</p>
+                <p class="school-type">{{ chool.phoneNumber }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="result-second-container">
+            <div class="result-first-container-first-side">
+              <div class="result-first-container-first-side-left-side">
+                <div class="result-first-container-first-side-left-side-cube">
+                  <div
+                    class="result-first-container-first-side-left-side-cube-icon"
+                  >
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="result-first-container-first-side-right-side">
+                <p class="skolis-tipi">ელ.ფოსტა</p>
+                <p class="school-type">{{ chool.email }}</p>
+              </div>
+            </div>
+            <div class="result-first-container-second-side">
+              <div class="result-first-container-first-side-left-side">
+                <div class="result-first-container-first-side-left-side-cube">
+                  <div
+                    class="result-first-container-first-side-left-side-cube-icon"
+                  >
+                    <i class="bi bi-boxes"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="result-first-container-first-side-right-side">
+                <p class="skolis-tipi">მასწავლებელთა რაოდენობა</p>
+                <p class="school-type">{{ chool.teacherCount }}</p>
+              </div>
+            </div>
+            <div class="result-first-container-third-side">
+              <div class="result-first-container-first-side-left-side">
+                <div class="result-first-container-first-side-left-side-cube">
+                  <div
+                    class="result-first-container-first-side-left-side-cube-icon"
+                  >
+                    <i class="bi bi-people-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="result-first-container-first-side-right-side">
+                <p class="skolis-tipi">მოსწავლეთა რაოდენობა</p>
+                <p class="school-type">{{ chool.studentCount }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="result-third-container">
+            <div class="result-first-container-first-side">
+              <div class="result-first-container-first-side-left-side">
+                <div class="result-first-container-first-side-left-side-cube">
+                  <div
+                    class="result-first-container-first-side-left-side-cube-icon"
+                  >
+                    <i class="bi bi-list-task"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="result-first-container-first-side-right-side">
+                <p class="skolis-tipi">ავტორიზაციის ვადები</p>
+              </div>
+            </div>
+            <div class="result-first-container-second-side">
+              <div class="result-first-container-first-side-left-side">
+                <div class="result-first-container-first-side-left-side-cube">
+                  <div
+                    class="result-first-container-first-side-left-side-cube-icon"
+                  >
+                    <i class="bi bi-book-half"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="result-first-container-first-side-right-side">
+                <p class="skolis-tipi">სექტორი</p>
+                <p class="school-type">{{ chool.sectors }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div> 
+   

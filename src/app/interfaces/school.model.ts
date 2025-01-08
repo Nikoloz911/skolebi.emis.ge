@@ -1,0 +1,30 @@
+export interface Ischool {
+    id?: number;
+    imageAttachmentId?: number; 
+    name?: string;
+    regionName?: string;
+    districtName?: string;
+    address?: string;
+    socialNetwork?: string;
+    principal?: string;
+    educationStatus?: string;
+    schoolType?: string;
+    buildingCount?: number;
+    email?: string;
+    phoneNumber?: string;
+    studentCount?: number;
+    teacherCount?: number;
+    sectors?: string;
+    mission?: boolean;
+    structure?: boolean;
+    programsandsupport?: boolean;
+    behaviorrulesandappellation?: boolean;
+    infrastructure?: boolean;
+    finance?: boolean;
+    strategicplan?: boolean;
+    yearlyactionplan?: boolean;
+    authorizationStartDate?: string;
+    webPage?: string;
+    authorizationEndDate?: string;
+    imageURL?: string;
+}

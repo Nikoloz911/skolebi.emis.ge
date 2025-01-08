@@ -1,0 +1,592 @@
+.schools-details-container {
+  height: 700px;
+  width: 100%;
+  display: flex;
+}
+.schools-details-container .result-container-left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.schools-details-container .result-container-left-side .result-image-container {
+  background-color: #fcfcfc;
+  border: solid 2px #ddd;
+  width: 600px;
+  height: 450px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-left-side .result-image {
+  width: 530px;
+  height: 320px;
+}
+.schools-details-container .result-container-right-side {
+  width: 60%;
+  margin-left: 40px;
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  gap: 15px;
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-social-container {
+  background-color: rgb(220, 220, 255);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transform: translateY(20px);
+  height: 50px;
+  border-radius: 20px;
+  width: 45px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-social-container:hover {
+  background-color: rgb(162, 162, 255);
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-social-container .result-social-container-icon {
+  color: blue;
+  transform: translateY(12px);
+  font-size: 23px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-social-container .result-social-container-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-eddress-container {
+  background-color: #ececec;
+  border: solid 1px #ddd;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 500ms;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-eddress-container:hover {
+  background-color: #ddd;
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-eddress-container .result-address {
+  color: grey;
+  font-weight: 600;
+  font-size: 14px;
+  transform: translateY(-10px);
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-eddress-container .result-region-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transform: translateY(10px);
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-eddress-container .result-region-container .result-icon {
+  font-size: 25px;
+  color: blue;
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-eddress-container .result-region-container .result-region {
+  color: blue;
+  font-weight: 900;
+}
+.schools-details-container .result-container-right-side .result-eddress-social-container .result-eddress-container .result-region-container .result-destrict-name {
+  color: blue;
+  font-weight: 900;
+}
+.schools-details-container .result-container-right-side .result-title {
+  font-size: 26px;
+}
+.schools-details-container .result-container-right-side .small-description-container {
+  width: 96%;
+  height: 110px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container {
+  background-color: rgb(222, 222, 254);
+  width: 500px;
+  height: 90%;
+  border-radius: 20px;
+  border: dotted 3px rgb(153, 153, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container:hover {
+  background-color: rgb(202, 202, 255);
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container .blue-container-left-side {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container .blue-container-left-side .blue-container-icon-cube {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container .blue-container-left-side .blue-container-icon-cube:hover {
+  background-color: black;
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container .blue-container-left-side .blue-container-icon-cube .blue-container-icon {
+  color: blue;
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container .blue-container-left-side .blue-container-icon-cube .blue-container-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container .blue-container-rigth-side {
+  height: 100%;
+  width: 80%;
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container .blue-container-rigth-side .direqtori {
+  margin-left: 25px;
+  color: rgb(88, 88, 88);
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container .blue-container-rigth-side .principal {
+  margin-left: 25px;
+  font-weight: 900;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .small-description-container .blue-container .blue-container-rigth-side .principal:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .small-description-container .green-container {
+  height: 90%;
+  width: 500px;
+  background-color: rgb(238, 255, 238);
+  border: dotted 3px rgb(157, 237, 157);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .small-description-container .green-container:hover {
+  background-color: rgb(212, 255, 212);
+}
+.schools-details-container .result-container-right-side .small-description-container .green-container .green-container-left-side {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .small-description-container .green-container .green-container-left-side .blue-container-icon-cube {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .small-description-container .green-container .green-container-left-side .blue-container-icon-cube:hover {
+  background-color: black;
+}
+.schools-details-container .result-container-right-side .small-description-container .green-container .green-container-left-side .blue-container-icon-cube .green-container-icon {
+  color: rgb(109, 197, 109);
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .small-description-container .green-container .green-container-left-side .blue-container-icon-cube .green-container-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .small-description-container .green-container .green-container-right-side {
+  width: 80%;
+  height: 100%;
+}
+.schools-details-container .result-container-right-side .result-main-container {
+  background-color: #fff;
+  height: 260px;
+  width: 100%;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  gap: 20px;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-first-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-first-side .result-first-container-first-side-left-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube {
+  background-color: #c2c3fa;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube:hover {
+  background-color: #9d9fff;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon {
+  color: blue;
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-first-side .result-first-container-first-side-right-side {
+  width: 70%;
+  height: 100%;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-first-side .result-first-container-first-side-right-side .skolis-tipi {
+  color: grey;
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-first-side .result-first-container-first-side-right-side .school-type {
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-second-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-second-side .result-first-container-first-side-left-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube {
+  background-color: rgb(255, 175, 175);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube:hover {
+  background-color: rgb(255, 127, 127);
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon {
+  color: rgb(255, 87, 87);
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-second-side .result-first-container-first-side-right-side {
+  width: 70%;
+  height: 100%;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-second-side .result-first-container-first-side-right-side .skolis-tipi {
+  color: grey;
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-second-side .result-first-container-first-side-right-side .school-type {
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-third-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-third-side .result-first-container-first-side-left-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-third-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube {
+  background-color: rgb(255, 236, 201);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-third-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube:hover {
+  background-color: rgb(255, 203, 100);
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-third-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon {
+  color: rgb(255, 182, 47);
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-third-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-third-side .result-first-container-first-side-right-side {
+  width: 70%;
+  height: 100%;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-third-side .result-first-container-first-side-right-side .skolis-tipi {
+  color: grey;
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-first-container .result-first-container-third-side .result-first-container-first-side-right-side .school-type {
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  gap: 20px;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-first-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-first-side .result-first-container-first-side-left-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube {
+  background-color: rgb(203, 159, 203);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube:hover {
+  background-color: rgb(132, 62, 132);
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon {
+  color: purple;
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-first-side .result-first-container-first-side-right-side {
+  width: 70%;
+  height: 100%;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-first-side .result-first-container-first-side-right-side .skolis-tipi {
+  color: grey;
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-first-side .result-first-container-first-side-right-side .school-type {
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-second-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-second-side .result-first-container-first-side-left-side {
+  width: 28%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube {
+  background-color: rgb(224, 234, 224);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube:hover {
+  background-color: rgb(168, 255, 168);
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon {
+  color: rgb(70, 201, 70);
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-second-side .result-first-container-first-side-right-side {
+  width: 72%;
+  height: 100%;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-second-side .result-first-container-first-side-right-side .skolis-tipi {
+  color: grey;
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-second-side .result-first-container-first-side-right-side .school-type {
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-third-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-third-side .result-first-container-first-side-left-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-third-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube {
+  background-color: rgb(255, 200, 200);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-third-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube:hover {
+  background-color: rgb(255, 145, 145);
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-third-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon {
+  color: rgb(255, 80, 80);
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-third-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-third-side .result-first-container-first-side-right-side {
+  width: 70%;
+  height: 100%;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-third-side .result-first-container-first-side-right-side .skolis-tipi {
+  color: grey;
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-second-container .result-first-container-third-side .result-first-container-first-side-right-side .school-type {
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  gap: 20px;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-first-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-first-side .result-first-container-first-side-left-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube {
+  background-color: rgb(214, 244, 214);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube:hover {
+  background-color: rgb(183, 255, 183);
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon {
+  color: rgb(50, 204, 50);
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-first-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-first-side .result-first-container-first-side-right-side {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-first-side .result-first-container-first-side-right-side .skolis-tipi {
+  color: grey;
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-second-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-second-side .result-first-container-first-side-left-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube {
+  background-color: rgb(255, 240, 211);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube:hover {
+  background-color: rgb(255, 216, 143);
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon {
+  color: rgb(255, 202, 103);
+  font-size: 22px;
+  transition: 500ms;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-second-side .result-first-container-first-side-left-side .result-first-container-first-side-left-side-cube .result-first-container-first-side-left-side-cube-icon:hover {
+  color: #fff;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-second-side .result-first-container-first-side-right-side {
+  width: 70%;
+  height: 100%;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-second-side .result-first-container-first-side-right-side .skolis-tipi {
+  color: grey;
+  font-weight: 600;
+}
+.schools-details-container .result-container-right-side .result-main-container .result-third-container .result-first-container-second-side .result-first-container-first-side-right-side .school-type {
+  font-weight: 600;
+}/*# sourceMappingURL=schools-details.component.css.map */

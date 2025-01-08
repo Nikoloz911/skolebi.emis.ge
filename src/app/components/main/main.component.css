@@ -1,0 +1,382 @@
+.main {
+  height: 900px;
+  width: 100%;
+}
+.main .main-first-title {
+  font-weight: 900;
+  font-size: 40px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+.main .main-second-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  margin-left: 150px;
+  transform: translateY(-20px);
+}
+.main .main-first-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 310px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.main .main-first-cards-container .main-first-card {
+  background-color: #f5f5f5;
+  border: solid 1px #ededed;
+  border-radius: 15px;
+  width: 485px;
+  height: 100%;
+  transition: 500ms;
+}
+.main .main-first-cards-container .main-first-card:hover {
+  box-shadow: 0px 0px 18px 11px rgba(212, 212, 212, 0.75);
+  -webkit-box-shadow: 0px 0px 18px 11px rgba(212, 212, 212, 0.75);
+  -moz-box-shadow: 0px 0px 18px 11px rgba(212, 212, 212, 0.75);
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section {
+  width: 100%;
+  height: 110px;
+  display: flex;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-first-card-cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 94, 255);
+  width: 60px;
+  height: 60px;
+  border: solid 1px rgb(0, 94, 255);
+  border-radius: 50px;
+  transition: 500ms;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-first-card-cube:hover {
+  background-color: #00d5ff;
+  border: solid 1px #00d5ff;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-first-card-cube .main-first-card-icon {
+  color: #fff;
+  font-size: 25px;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-second-card-cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 237, 63);
+  width: 60px;
+  height: 60px;
+  border: solid 1px rgb(0, 237, 63);
+  border-radius: 50px;
+  transition: 500ms;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-second-card-cube:hover {
+  background-color: #fffb00;
+  border: solid 1px #fffb00;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-second-card-cube .main-first-card-icon {
+  color: #fff;
+  font-size: 25px;
+  transition: 500ms;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-second-card-cube .main-first-card-icon:hover {
+  color: #000;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-third-card-cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(243, 70, 1);
+  width: 60px;
+  height: 60px;
+  border: solid 1px rgb(243, 70, 1);
+  border-radius: 50px;
+  transition: 500ms;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-third-card-cube:hover {
+  background-color: #c300ff;
+  border: solid 1px #c300ff;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-icon-side .main-third-card-cube .main-first-card-icon {
+  color: #fff;
+  font-size: 25px;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-titles-side {
+  width: 70%;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-titles-side .first-card-first-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-first-section .main-first-card-titles-side .first-card-second-title {
+  font-weight: 800;
+  font-size: 25px;
+  transform: translateY(-20px);
+}
+.main .main-first-cards-container .main-first-card .main-first-card-second-section {
+  width: 100%;
+  height: 120px;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-second-section .main-first-card-description {
+  color: rgb(80, 80, 80);
+  font-size: 14px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-third-section {
+  height: 70px;
+  display: flex;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-third-section .main-first-card-third-section-left-side {
+  width: 80%;
+  height: 70px;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-third-section .main-first-card-third-section-right-side {
+  width: 20%;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-third-section .main-first-card-third-section-right-side .main-first-card-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-third-section .main-first-card-third-section-right-side .main-first-card-link .main-first-card-link-cube {
+  background-color: #000;
+  border: solid 1px #000;
+  border-radius: 20px;
+  width: 70px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-third-section .main-first-card-third-section-right-side .main-first-card-link .main-first-card-link-cube .main-first-card-link-cube-text {
+  display: none;
+  color: #fff;
+  position: absolute;
+  font-weight: 900;
+  transform: translateX(-70px);
+  padding-bottom: 8px;
+}
+.main .main-first-cards-container .main-first-card .main-first-card-third-section .main-first-card-third-section-right-side .main-first-card-link .main-first-card-link-cube:hover {
+  padding-left: 110px;
+  width: 60px;
+  transform: translateX(-100px);
+}
+.main .main-first-cards-container .main-first-card .main-first-card-third-section .main-first-card-third-section-right-side .main-first-card-link .main-first-card-link-cube:hover .main-first-card-link-cube-text {
+  display: block;
+}
+.main .main-second-cards-container {
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main .main-second-cards-container .main-first-card-link-cube {
+  background-color: #000;
+  border: solid 1px #000;
+  border-radius: 20px;
+  width: 70px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+}
+.main .main-second-cards-container .main-first-card-link-cube .main-first-card-link-cube-text {
+  display: none;
+  color: #fff;
+  position: absolute;
+  font-weight: 900;
+  transform: translateX(-70px);
+  padding-bottom: 8px;
+}
+.main .main-second-cards-container .main-first-card-link-cube:hover {
+  padding-left: 110px;
+  width: 60px;
+  transform: translateX(-100px);
+}
+.main .main-second-cards-container .main-first-card-link-cube:hover .main-first-card-link-cube-text {
+  display: block;
+}
+.main .main-second-cards-container .main-second-card {
+  background-color: #f5f5f5;
+  border: solid 1px #ededed;
+  border-radius: 15px;
+  width: 730px;
+  height: 100%;
+  transition: 500ms;
+}
+.main .main-second-cards-container .main-second-card:hover {
+  box-shadow: 0px 0px 18px 11px rgba(212, 212, 212, 0.75);
+  -webkit-box-shadow: 0px 0px 18px 11px rgba(212, 212, 212, 0.75);
+  -moz-box-shadow: 0px 0px 18px 11px rgba(212, 212, 212, 0.75);
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section {
+  width: 100%;
+  height: 110px;
+  display: flex;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-first-card-cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 94, 255);
+  width: 60px;
+  height: 60px;
+  border: solid 1px rgb(0, 94, 255);
+  border-radius: 50px;
+  transition: 500ms;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-first-card-cube:hover {
+  background-color: #00d5ff;
+  border: solid 1px #00d5ff;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-first-card-cube .main-first-card-icon {
+  color: #fff;
+  font-size: 25px;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-second-card-cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 237, 63);
+  width: 60px;
+  height: 60px;
+  border: solid 1px rgb(0, 237, 63);
+  border-radius: 50px;
+  transition: 500ms;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-second-card-cube:hover {
+  background-color: #fffb00;
+  border: solid 1px #fffb00;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-second-card-cube .main-first-card-icon {
+  color: #fff;
+  font-size: 25px;
+  transition: 500ms;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-second-card-cube .main-first-card-icon:hover {
+  color: #000;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-fourth-card-cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 234, 0);
+  width: 60px;
+  height: 60px;
+  border: solid 1px rgb(255, 234, 0);
+  border-radius: 50px;
+  transition: 500ms;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-fourth-card-cube:hover {
+  background-color: #ff8c00;
+  border: solid 1px #ff8c00;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-fourth-card-cube .main-first-card-icon {
+  color: #fff;
+  font-size: 25px;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-fifth-card-cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(169, 0, 241);
+  width: 60px;
+  height: 60px;
+  border: solid 1px rgb(169, 0, 241);
+  border-radius: 50px;
+  transition: 500ms;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-fifth-card-cube:hover {
+  background-color: #ff8c00;
+  border: solid 1px #ff8c00;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-icon-side .main-fifth-card-cube .main-first-card-icon {
+  color: #fff;
+  font-size: 25px;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-titles-side {
+  width: 70%;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-titles-side .first-card-first-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-first-section .main-first-card-titles-side .first-card-second-title {
+  font-weight: 800;
+  font-size: 25px;
+  transform: translateY(-20px);
+}
+.main .main-second-cards-container .main-second-card .main-first-card-second-section {
+  width: 100%;
+  height: 120px;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-second-section .main-first-card-description {
+  color: rgb(80, 80, 80);
+  font-size: 14px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-third-section {
+  height: 70px;
+  display: flex;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-third-section .main-first-card-third-section-left-side {
+  width: 80%;
+  height: 70px;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-third-section .main-first-card-third-section-right-side {
+  width: 20%;
+}
+.main .main-second-cards-container .main-second-card .main-first-card-third-section .main-first-card-third-section-right-side .main-first-card-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.map-section {
+  height: 900px;
+  width: 100%;
+  background-color: #fff;
+}
+.map-section .map-section-title {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(0, 94, 255);
+}
+.map-section .map-section-titles-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-30px);
+  gap: 8px;
+}
+.map-section .map-section-titles-container .map-section-second-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.map-section .map-section-titles-container .map-section-third-title {
+  font-weight: 900;
+}/*# sourceMappingURL=main.component.css.map */

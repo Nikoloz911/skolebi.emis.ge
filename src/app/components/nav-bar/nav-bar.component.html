@@ -1,0 +1,377 @@
+<nav id="01" class="nav-bar">
+  <div id="02"  class="nav-bar-content">
+    <div class="main-nav-bar">
+      <div class="main-nav-bar-left-side">
+        <a href="/main">
+          <img
+            class="main-nav-bar-image"
+            src="https://skolebi.emis.ge/assets/icons/logo.png"
+            alt="საქართველოს გერბი"
+          />
+        </a>
+      </div>
+      <div class="main-nav-bar-right-side">
+        <div class="main-nav-bar-navigation">
+          <a class="main-nav-bar-link" href="/main">
+            <div class="nav-bar-icon">
+              <i class="bi bi-house-door-fill"></i>
+            </div>
+            <p class="nav-bar-link-title">მთავარი</p>
+          </a>
+          <div class="nav-bar-line"></div>
+          <a class="main-nav-bar-second-link" href="/education">
+            <div class="nav-bar-icon">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <p class="nav-bar-link-title">ზოგადი განათლება</p>
+          </a>
+          <div class="nav-bar-line"></div>
+          <a class="main-nav-bar-link" href="/schools">
+            <div class="nav-bar-icon"><i class="bi bi-buildings-fill"></i></div>
+            <p class="nav-bar-link-title">სკოლები</p>
+          </a>
+          <div class="nav-bar-line"></div>
+          <a class="main-nav-bar-second-link" href="/legislation">
+            <div class="nav-bar-icon"><i class="bi bi-duffle-fill"></i></div>
+            <p class="nav-bar-link-title">კანონმდებლობა</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-bar-main-side">
+      <div class="main-title-section">
+        <h1 class="main-first-title">მოძებნე სკოლა</h1>
+        <h1 class="main-second-title">საქართველოს მაშტაბით</h1>
+      </div>
+      <div class="main-search-section">
+        <div class="search-box">
+          <div class="search-box-description-side">
+            <h6 class="search-box-title">დეტალურად ძებნა</h6>
+            <p class="search-box-description">
+              სკოლის მოძებნა შესაძლებელია საძიებო ველისა და რუკის დახმარებით
+            </p>
+          </div>
+          <div class="search-box-search-side">
+            <div class="search-cube">
+              <div class="search-cube-left-side">
+                <div class="dropdown">
+                  <div class="select">
+                    <span class="selected">რეგიონი</span>
+                    <div class="caret"></div>
+                  </div>
+                  <ul class="menu">
+                    <div class="menu-title-side">
+                      <h2 class="menu-title">რეგიონები</h2>
+                    </div>
+                    <div class="menu-first-container">
+                      <li><a href="/tbilisi">თბილისი</a></li>
+                      <li><a href="/apxazia">აფხაზეთი</a></li>
+                      <li><a href="/adjara">აჭარა</a></li>
+                    </div>
+                    <div class="menu-first-container">
+                      <li><a href="/guria">გურია</a></li>
+                      <li><a href="/imereti">იმერეთი</a></li>
+                      <li><a href="/kaxeti">კახეთი</a></li>
+                    </div>
+
+                    <div class="menu-third-container">
+                      <li><a href="/mcxeta">მცხეთა-მთიანეთი</a></li>
+                      <li><a href="/racha">რაჭა-ლეჩხუმი და ქვემო სვანეთი</a></li>
+                      <li><a href="/samegrelo">სამეგრელო ზემო-სვანეთი</a></li>
+                    </div>
+
+                    <div class="menu-first-container">
+                      <li><a href="/javaxeti">სამცხე-ჯავახეთი</a></li>
+                      <li><a href="/qvemoqartli">ქვემო ქართლი</a></li>
+                      <li><a href="/shidaqartli">შიდა ქართლი</a></li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <div class="search-cube-right-side">
+                <input
+                  id="search-input"
+                  class="input"
+                  type="text"
+                  placeholder="მაგ.: სკოლა, რაიონი"
+                  (input)="onInput()"
+                />
+               
+              </div>
+            </div>
+            <button
+              (click)="searchSchool()"
+              id="search-button"
+              class="search-button"
+            >
+              <i class="bi bi-search"></i>
+              <div class="hover-cube">
+                <p class="hover-cube-title">ძებნა</p>
+              </div>
+            </button>
+          </div>
+          <div id="004" class="search-box-checkmark-side">
+            <input id="public-school-checkbox" class="nav-bar-checkbox" type="checkbox" />
+            <p class="nav-bar-checkbox-title">მხოლოდ საჯარო სკოლები</p>
+            <p id="search-input-error" class="search-input-error-text"></p>
+          </div>
+        </div>
+      </div>
+      <div id="suggestions" class="suggestions" style="display: none;">
+            
+               
+      </div>
+
+
+      
+      <div id="no-result" class="no-result-container">
+        <div class="main-container">
+          <div class="circle">
+             <div class="black-circle">
+                 <p>i</p>
+             </div>
+          </div>
+          <p class="title">ინფორმაცია არ მოიძებნა</p>
+          <p class="description">ამ ეტაპისთვის ინფორმაცია არ მოიძებნა</p>
+         
+      </div>
+      </div>
+
+      <div id="result-container" class="result-container" *ngIf="selectedSchool">
+        <div class="result-container-left-side">
+          <div class="result-image-container">
+            <img class="result-image" [src]="selectedSchool.imageURL" alt="">
+          </div>
+        </div>
+        <div class="result-container-right-side">
+          <div id="005" class="result-eddress-social-container">
+            <div class="result-eddress-container">
+              <div class="result-region-container">
+                <div class="result-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <p class="result-region">{{ selectedSchool.regionName }},</p>
+                <p class="result-destrict-name">
+                  {{ selectedSchool.districtName }}
+                </p>
+              </div>
+              <p class="result-address">{{ selectedSchool.address }}</p>
+            </div>
+            <a href="{{selectedSchool.socialNetwork}}">
+            <div class="result-social-container">
+            <div class="result-social-container-icon"><i class="bi bi-facebook"></i></div> 
+            </div>
+          </a>
+          </div>
+        
+
+          <h3 class="result-title">{{ selectedSchool?.name }}</h3>
+          <div class="small-description-container">
+            <div class="blue-container">
+              <div class="blue-container-left-side">
+                <div class="blue-container-icon-cube">
+                  <div class="blue-container-icon">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="blue-container-rigth-side">
+                <p class="direqtori">დირექტორი</p>
+                <p class="principal">{{ selectedSchool.principal }}</p>
+              </div>
+            </div>
+            <div class="green-container">
+              <div class="green-container-left-side">
+                <div class="blue-container-icon-cube">
+                  <div class="green-container-icon">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="green-container-rigth-side">
+                <!-- არ ისტილება ჯერ ჯერობით -->
+                <p class="status01">საგანმანათლებლო სტატუსი</p>
+                <p class="education-status01">
+                  {{ selectedSchool.educationStatus }}
+                </p>
+                <!-- არ ისტილება ჯერ ჯერობით -->
+              </div>
+            </div>
+          </div>
+
+          <div class="result-main-container">
+            <div class="result-first-container">
+              <div class="result-first-container-first-side">
+                <div class="result-first-container-first-side-left-side">
+                  <div class="result-first-container-first-side-left-side-cube">
+                    <div
+                      class="result-first-container-first-side-left-side-cube-icon"
+                    >
+                      <i class="bi bi-buildings-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-first-container-first-side-right-side">
+                  <p class="skolis-tipi">სკოლის ტიპი</p>
+                  <p class="school-type">{{ selectedSchool.schoolType }}</p>
+                </div>
+              </div>
+              <div class="result-first-container-second-side">
+                <div class="result-first-container-first-side-left-side">
+                  <div class="result-first-container-first-side-left-side-cube">
+                    <div
+                      class="result-first-container-first-side-left-side-cube-icon"
+                    >
+                      <i class="bi bi-houses-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-first-container-first-side-right-side">
+                  <p class="skolis-tipi">შენობების რაოდენობა</p>
+                  <p class="school-type">{{ selectedSchool.buildingCount }}</p>
+                </div>
+              </div>
+              <div class="result-first-container-third-side">
+                <div class="result-first-container-first-side-left-side">
+                  <div class="result-first-container-first-side-left-side-cube">
+                    <div
+                      class="result-first-container-first-side-left-side-cube-icon"
+                    >
+                      <i class="bi bi-telephone-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-first-container-first-side-right-side">
+                  <p class="skolis-tipi">ტელეფონის ნომერი</p>
+                  <p class="school-type">{{ selectedSchool.phoneNumber }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="result-second-container">
+              <div class="result-first-container-first-side">
+                <div class="result-first-container-first-side-left-side">
+                  <div class="result-first-container-first-side-left-side-cube">
+                    <div
+                      class="result-first-container-first-side-left-side-cube-icon"
+                    >
+                      <i class="bi bi-envelope-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-first-container-first-side-right-side">
+                  <p class="skolis-tipi">ელ.ფოსტა</p>
+                  <p class="school-type">{{ selectedSchool.email }}</p>
+                </div>
+              </div>
+              <div class="result-first-container-second-side">
+                <div class="result-first-container-first-side-left-side">
+                  <div class="result-first-container-first-side-left-side-cube">
+                    <div
+                      class="result-first-container-first-side-left-side-cube-icon"
+                    >
+                      <i class="bi bi-boxes"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-first-container-first-side-right-side">
+                  <p class="skolis-tipi">მასწავლებელთა რაოდენობა</p>
+                  <p class="school-type">{{ selectedSchool.teacherCount }}</p>
+                </div>
+              </div>
+              <div class="result-first-container-third-side">
+                <div class="result-first-container-first-side-left-side">
+                  <div class="result-first-container-first-side-left-side-cube">
+                    <div
+                      class="result-first-container-first-side-left-side-cube-icon"
+                    >
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-first-container-first-side-right-side">
+                  <p class="skolis-tipi">მოსწავლეთა რაოდენობა</p>
+                  <p class="school-type">{{ selectedSchool.studentCount }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="result-third-container">
+              <div class="result-first-container-first-side">
+                <div class="result-first-container-first-side-left-side">
+                  <div class="result-first-container-first-side-left-side-cube">
+                    <div
+                      class="result-first-container-first-side-left-side-cube-icon"
+                    >
+                      <i class="bi bi-list-task"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-first-container-first-side-right-side">
+                  <p class="skolis-tipi">ავტორიზაციის ვადები</p>
+                </div>
+              </div>
+              <div class="result-first-container-second-side">
+                <div class="result-first-container-first-side-left-side">
+                  <div class="result-first-container-first-side-left-side-cube">
+                    <div
+                      class="result-first-container-first-side-left-side-cube-icon"
+                    >
+                      <i class="bi bi-book-half"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-first-container-first-side-right-side">
+                  <p class="skolis-tipi">სექტორი</p>
+                  <p class="school-type">{{ selectedSchool.sectors }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div class="main-school-cards-section">
+        <a id="001" class="school-card" href="/schools">
+          <div class="first-card">
+            <div class="first-card-left-side">
+              <p class="first-card-title">სკოლების რაოდენობა</p>
+              <p class="first-card-number">2 296</p>
+            </div>
+            <div class="first-card-right-side">
+              <div class="first-card-cube">
+                <i class="bi bi-flag-fill"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a id="002" class="school-card" href="/privateSchools">
+          <div class="second-card">
+            <div class="second-card-left-side">
+              <p class="second-card-title">კერძო სკოლა</p>
+              <p class="second-card-number">210</p>
+            </div>
+            <div class="second-card-right-side">
+              <div class="second-card-cube">
+                <i class="bi bi-layout-text-window-reverse"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a id="003" class="school-card" href="/publicSchools">
+          <div class="third-card">
+            <div class="second-card-left-side">
+              <p class="second-card-title">საჯარო სკოლა</p>
+              <p class="second-card-number">2 086</p>
+            </div>
+            <div class="second-card-right-side">
+              <div class="third-card-cube">
+                <i class="bi bi-layout-text-window-reverse"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
