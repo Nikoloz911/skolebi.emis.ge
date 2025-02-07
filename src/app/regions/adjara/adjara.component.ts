@@ -117,7 +117,6 @@ export class AdjaraComponent {
       filteredSchools = filteredSchools.filter(school => school.educationStatus === 'საშუალო (10-12)');
     }
   
-  
     if (oneCheckbox && oneCheckbox.checked) {
       filteredSchools = filteredSchools.filter(school => school.sectors && school.sectors.includes('ქართული'));
     }
@@ -144,8 +143,6 @@ export class AdjaraComponent {
     this.schools = filteredSchools.slice(0, this.schoolsToShow);
     this.adjustHeight();
   }
-  
-
   searchSchools(): void {
     let searchInput = this.searchQuery.trim().toLowerCase();
     if (searchInput === "") {
@@ -157,13 +154,11 @@ export class AdjaraComponent {
       (school.name && school.name.toLowerCase().includes(searchInput)) ||
       (school.id?.toString()?.includes(searchInput))
     );
-
     console.log('Schools found:', this.schools.length); 
 
     if (this.schools.length === 0) {
     }
   }
-
   loadSchools(): void {
     this.originalSchools.forEach(school => {
       if (school.imageAttachmentId) {
@@ -179,16 +174,12 @@ export class AdjaraComponent {
     console.log('Schools to display:', this.schools.length);
     this.adjustHeight();
   }
-
-
-
   showMoreSchools(): void {
     this.schoolsToShow += 12;  
     this.loadSchools();
     this.filterSchools();
     this.adjustHeight();
   }
-
   adjustHeight(): void {
     let schoolsSection = document.getElementById('schools-section');
     if (schoolsSection) {
@@ -197,16 +188,10 @@ export class AdjaraComponent {
     }
   }
 
-
-  
   clearSearch(): void {
     this.searchQuery = '';
     this.loadSchools(); 
   }
-
-
-
-
   ngAfterViewInit(): void {
     let dropdowns = document.querySelectorAll<HTMLElement>(".dropdown");
     let thirdDropdowns = document.querySelectorAll<HTMLAnchorElement>(".third-dropdown");

@@ -53,28 +53,7 @@ export class PrivateSchoolsComponent {
     this.searchQuery = '';
     this.loadSchools(); 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  setaupeventListeners2(): void {
+    setaupeventListeners2(): void {
     let mainCheckbox = document.getElementById('main-checkbox') as HTMLInputElement;
     let firstCheckbox = document.getElementById('first-checkbox-1') as HTMLInputElement;
     let secondCheckbox = document.getElementById('first-checkbox-2') as HTMLInputElement;
@@ -162,8 +141,7 @@ export class PrivateSchoolsComponent {
     if (thirdCheckbox && thirdCheckbox.checked) {
       filteredSchools = filteredSchools.filter(school => school.educationStatus === 'საშუალო (10-12)');
     }
-  
-  
+
     if (oneCheckbox && oneCheckbox.checked) {
       filteredSchools = filteredSchools.filter(school => school.sectors && school.sectors.includes('ქართული'));
     }
@@ -185,38 +163,10 @@ export class PrivateSchoolsComponent {
     if (sevenCheckbox && sevenCheckbox.checked) {
       filteredSchools = filteredSchools.filter(school => school.sectors && school.sectors.includes('გერმანული'));
     }
-  
-  
     this.schools = filteredSchools.slice(0, this.schoolsToShow);
     this.adjustHeight();
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   loadSchools(): void {
-    
     this.originalSchools.forEach(school => {
       if (school.imageAttachmentId) {
         school.imageURL = `https://skolebi.emis.ge/back/imagedownload?attachmentId=${school.imageAttachmentId}`;
@@ -224,10 +174,7 @@ export class PrivateSchoolsComponent {
         school.imageURL = 'https://skolebi.emis.ge/assets/images/empty-image.png';
       }
     });
-  
-  
     this.schools = this.originalSchools.filter(school => school.schoolType === 'PRIVATE').slice(0, this.schoolsToShow);
-    
     this.adjustHeight(); 
   }
   
@@ -238,8 +185,6 @@ export class PrivateSchoolsComponent {
     this.filterSchools();
     this.adjustHeight();
   }
-
-
   adjustHeight(): void {
     let schoolsSection = document.getElementById('schools-section');
     if (schoolsSection) {
@@ -251,7 +196,6 @@ export class PrivateSchoolsComponent {
     let dropdowns = document.querySelectorAll<HTMLElement>(".dropdown");
     let thirdDropdowns = document.querySelectorAll<HTMLAnchorElement>(".third-dropdown");
     let fourthDropdowns = document.querySelectorAll<HTMLAnchorElement>(".fourth-dropdown");
-
     let initializeDropdown = (dropdowns: NodeListOf<HTMLElement | HTMLAnchorElement>) => {
       dropdowns.forEach((dropdown) => {
         let select = dropdown.querySelector<HTMLElement>(".select");
@@ -285,7 +229,6 @@ export class PrivateSchoolsComponent {
             menu?.classList.remove("menu-open");
           });
         });
-
         document.addEventListener("click", (event) => {
           if (!dropdown.contains(event.target as Node)) {
             select?.classList.remove("select-clicked");
@@ -295,11 +238,8 @@ export class PrivateSchoolsComponent {
         });
       });
     };
-
     initializeDropdown(dropdowns);
     initializeDropdown(thirdDropdowns);
     initializeDropdown(fourthDropdowns);
   }
-
 }
-
