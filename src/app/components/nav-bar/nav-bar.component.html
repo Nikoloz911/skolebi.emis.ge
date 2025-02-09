@@ -1,5 +1,5 @@
 <nav id="01" class="nav-bar">
-  <div id="02"  class="nav-bar-content">
+  <div id="02" class="nav-bar-content">
     <div class="main-nav-bar">
       <div class="main-nav-bar-left-side">
         <a href="/main">
@@ -77,7 +77,9 @@
 
                     <div class="menu-third-container">
                       <li><a href="/mcxeta">მცხეთა-მთიანეთი</a></li>
-                      <li><a href="/racha">რაჭა-ლეჩხუმი და ქვემო სვანეთი</a></li>
+                      <li>
+                        <a href="/racha">რაჭა-ლეჩხუმი და ქვემო სვანეთი</a>
+                      </li>
                       <li><a href="/samegrelo">სამეგრელო ზემო-სვანეთი</a></li>
                     </div>
 
@@ -97,7 +99,6 @@
                   placeholder="მაგ.: სკოლა, რაიონი"
                   (input)="onInput()"
                 />
-               
               </div>
             </div>
             <button
@@ -112,43 +113,47 @@
             </button>
           </div>
           <div id="004" class="search-box-checkmark-side">
-            <input id="public-school-checkbox" class="nav-bar-checkbox" type="checkbox" />
+            <input
+              id="public-school-checkbox"
+              class="nav-bar-checkbox"
+              type="checkbox"
+            />
             <p class="nav-bar-checkbox-title">მხოლოდ საჯარო სკოლები</p>
             <p id="search-input-error" class="search-input-error-text"></p>
           </div>
         </div>
       </div>
-      <div id="suggestions" class="suggestions" style="display: none;">
-            
-               
-      </div>
+      <div id="suggestions" class="suggestions" style="display: none"></div>
 
-
-      
       <div id="no-result" class="no-result-container">
         <div class="main-container">
           <div class="circle">
-             <div class="black-circle">
-                 <p>i</p>
-             </div>
+            <div class="black-circle">
+              <p>i</p>
+            </div>
           </div>
           <p class="title">ინფორმაცია არ მოიძებნა</p>
           <p class="description">ამ ეტაპისთვის ინფორმაცია არ მოიძებნა</p>
-         
-      </div>
+        </div>
       </div>
 
-      <div id="result-container" class="result-container" *ngIf="selectedSchool">
+      <div
+        id="result-container"
+        class="result-container"
+        *ngIf="selectedSchool"
+      >
         <div class="result-container-left-side">
           <div class="result-image-container">
-            <img class="result-image" [src]="selectedSchool.imageURL" alt="">
+            <img class="result-image" [src]="selectedSchool.imageURL" alt="" />
           </div>
         </div>
         <div class="result-container-right-side">
           <div id="005" class="result-eddress-social-container">
             <div class="result-eddress-container">
               <div class="result-region-container">
-                <div class="result-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="result-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
                 <p class="result-region">{{ selectedSchool.regionName }},</p>
                 <p class="result-destrict-name">
                   {{ selectedSchool.districtName }}
@@ -156,15 +161,16 @@
               </div>
               <p class="result-address">{{ selectedSchool.address }}</p>
             </div>
-            <a href="{{selectedSchool.socialNetwork}}">
-            <div class="result-social-container">
-            <div class="result-social-container-icon"><i class="bi bi-facebook"></i></div> 
-            </div>
-          </a>
+            <a href="{{ selectedSchool.socialNetwork }}">
+              <div class="result-social-container">
+                <div class="result-social-container-icon">
+                  <i class="bi bi-facebook"></i>
+                </div>
+              </div>
+            </a>
           </div>
-        
 
-          <h3 class="result-title">{{ selectedSchool?.name }}</h3>
+          <h3 class="result-title">{{ selectedSchool.name }}</h3>
           <div class="small-description-container">
             <div class="blue-container">
               <div class="blue-container-left-side">
@@ -326,8 +332,6 @@
             </div>
           </div>
         </div>
-
-        
       </div>
 
       <div class="main-school-cards-section">
