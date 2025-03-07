@@ -20,7 +20,7 @@ $second-color: rgba(0, 150, 82, 0.358);
   width: 99.9%;
   height: 170px;
   border: solid 1px $first-color;
-  background-color: rgb(203, 255, 231);
+  background-color: rgb(198, 239, 223);
   .nav-bar-content {
     border: solid 10px black;
     border-radius: 30px;
@@ -74,7 +74,7 @@ $second-color: rgba(0, 150, 82, 0.358);
             justify-content: center;
             width: 115px;
             gap: 10px;
-             transition: 500ms;
+            transition: 500ms;
             &:hover {
               background-color: $second-color;
               border-radius: 10px;
@@ -96,9 +96,8 @@ $second-color: rgba(0, 150, 82, 0.358);
                 color: #000;
               }
             }
-          
           }
-          
+
           .main-nav-bar-second-link {
             text-decoration: none;
             display: flex;
@@ -128,7 +127,6 @@ $second-color: rgba(0, 150, 82, 0.358);
                 color: #000;
               }
             }
-            
           }
           .nav-bar-line {
             background-color: #333;
@@ -143,6 +141,5 @@ $second-color: rgba(0, 150, 82, 0.358);
         }
       }
     }
-   
   }
 }
